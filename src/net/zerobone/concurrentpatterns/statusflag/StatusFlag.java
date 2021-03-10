@@ -1,6 +1,6 @@
 package net.zerobone.concurrentpatterns.statusflag;
 
-public class StatusFlag implements Runnable {
+class StatusFlag implements Runnable {
 
     private volatile boolean running = true;
 

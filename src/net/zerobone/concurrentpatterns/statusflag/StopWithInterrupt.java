@@ -2,7 +2,7 @@ package net.zerobone.concurrentpatterns.statusflag;
 
 import java.io.IOException;
 
-public class StopWithInterrupt extends Thread {
+class StopWithInterrupt extends Thread {
 
     @Override
     public void run() {

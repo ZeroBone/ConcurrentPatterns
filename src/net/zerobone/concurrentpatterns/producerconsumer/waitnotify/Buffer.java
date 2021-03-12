@@ -4,8 +4,10 @@ class Buffer {
 
     private final int[] arr;
 
+    // the index of the first element of the queue (that will be extracted first)
     private int left = 0;
 
+    // the index of the first cell after the last element in the queue
     private int right = 0;
 
     private boolean empty = true;

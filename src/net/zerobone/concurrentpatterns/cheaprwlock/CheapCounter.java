@@ -4,7 +4,9 @@ class CheapCounter {
 
     // it is important to use integer here, as in Java language specification,
     // it is guaranteed that integers are written-to atomically
-    // the code is not thread-safe if we use double or long here, for example
+    // the code is not thread-safe if we use double or long here, for example,
+    // and don't declare the variable as volatile
+    // if we declare the variable as volatile, it would be ok to use other types like long or double
     private volatile int value;
 
     public int get() {

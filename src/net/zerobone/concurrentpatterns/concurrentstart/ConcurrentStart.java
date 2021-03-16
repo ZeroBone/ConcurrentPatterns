@@ -116,7 +116,7 @@ class ConcurrentStart extends Thread {
                 ConcurrentStart task = it.next();
 
                 if (task.done) {
-                    System.out.println("Task finished at: " + task.ts);
+                    System.out.println("Task started working at: " + task.ts);
                     it.remove();
                 }
 

@@ -4,7 +4,7 @@ class JoinScatterGather extends Thread {
 
     private final int initialValue;
 
-    public volatile int result = 0;
+    public int result = 0;
 
     public JoinScatterGather(int initialValue) {
         assert initialValue >= 1;
